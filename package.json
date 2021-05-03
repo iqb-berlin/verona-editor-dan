@@ -1,11 +1,12 @@
 {
-  "name": "verona-editor-dan",
-  "version": "3.0.0",
-  "description": "Authoring for IQB Visual Unit Player",
+  "name": "iqb-editor-dan",
+  "version": "3.1.0",
+  "description": "Authoring IQB Test Units",
   "main": "",
   "scripts": {
     "build": "custom_build.bat",
-    "pack": "node node_modules/iqb-dev-components/src/distpacker.js build/unitAuthoring/ editor-dan-$npm_package_version.html"
+    "pack": "node node_modules/iqb-dev-components/src/distpacker.js build/unitAuthoring/ iqb-editor-dan@$npm_package_version.html",
+    "pack-windows": "node node_modules/iqb-dev-components/src/distpacker.js build/unitAuthoring/ %npm_package_name%@%npm_package_version%.html"
   },
   "repository": {
     "type": "git",
